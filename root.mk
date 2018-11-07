@@ -13,7 +13,7 @@ OS		:= $(KERNEL)
 
 CROSS_COMPILE   := $(ARCH)-$(OS)-$(ABI)-
 
-PROFILE		?= repeater
+PROFILE		?= zperf
 
 # Directories and Files
 ################################################################
@@ -21,7 +21,7 @@ SHELL		:= /bin/bash
 PWD		:= $(shell pwd)
 PRJDIR		:= $(PWD)
 
-app_DIR		:= $(PRJDIR)/apps
+app_DIR		:= $(PRJDIR)/zephyr/samples/net
 profile_DIR	:= $(app_DIR)/$(PROFILE)
 boot_DIR	:= $(PRJDIR)/$(BOOT)
 kernel_DIR	:= $(PRJDIR)/$(KERNEL)
